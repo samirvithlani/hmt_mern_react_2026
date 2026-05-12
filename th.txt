@@ -1,0 +1,101 @@
+JavaScript: programing lang:
+tech fw:
+
+morden web application: React-js
+
+frontend fw
+fw is pre define arch
+
+backend: java[spring,hibernate] python[django,fastapi,flask]
+       : js[node,express] ,php, .net
+frontend: HTML CSS JS -> React js, anfular
+
+MERN:
+mongo db:
+express js:
+react js
+node js
+ --->full stack developer
+
+facebook:
+2004 : PHP
+
+be:PHP
+fr:PHP
+ tightly bounded:
+
+2005,2006,2007, --->
+BE: secur..
+fe: design optimization
+
+--->be fe :
+
+MVC:model view controller: 
+
+N TIRE APPLICATION:
+fronend diff:
+backend tech:
+
+faceboook react js develop
+
+:node install
+
+
+D:|C:
+  projects [f]
+   MERN[f]  
+    ctrl +L
+    cmd press enter
+
+
+npm create vite
+y
+learning26
+react
+javascript
+n
+
+cd learning26
+npm install
+
+>---------------------------->
+npm create vite:
+npm : node package manager:
+c:pf/nodejs/npm/node_module
+
+
+java -->jdk --> jvm/jre  -->.jar ->packages -->classes -->functions
+node -->      npm -->node_modues   -->build/dist  --> pckages -->.js/ts --> function
+
+js:- browser -> client side  -> server side [node js] -->react server side -- nodejs
+
+
+npm install:
+
+
+1)package.json
+
+
+serverstart --->index.html
+JSX: javascript XML
+
+Custom components in react js:
+Component: Function
+2 type components:
+1)class based components
+2)function based component: 16.8
+
+:Naming rules
+component name must starts with cap
+component name must not contains space and not starts with number
+
+eg:
+Header :--> valid
+header : --> not valid..
+
+1 component must return only 1 tag
+
+header component
+product componne
+product detail
+cart compoentn
