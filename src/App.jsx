@@ -14,6 +14,8 @@ import { Shows } from './components/hotstar/Shows'
 import { Route, Routes } from 'react-router-dom'
 import { Sports } from './components/hotstar/Sports'
 import { Navbar } from './components/Navbar'
+import { Error404 } from './components/Error404'
+import { HomePage } from './components/hotstar/HomePage'
 
 
 function App() {
@@ -23,9 +25,11 @@ function App() {
     <div>
       <Navbar></Navbar>
           <Routes>
+            <Route path='' element = {<HomePage/>}></Route>
             <Route path='/movies' element={<Movies/>}></Route>  
             <Route path='/shows' element ={<Shows/>}></Route>
             <Route path='/sports' element = {<Sports/>}></Route>
+            <Route path='/*' element = {<Error404/>}></Route>
           </Routes> 
     </div>
   )

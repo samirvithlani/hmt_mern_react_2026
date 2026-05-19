@@ -116,3 +116,9 @@ Navbar.jsx
 Go to bootstrap navbar: copy navbar code:
 
 cpoy css cdn in index.html -->pls check zoom chat
+
+components:
+       aboutus
+       contact us
+app.js -->route -->url
+navbar --> li -->        
