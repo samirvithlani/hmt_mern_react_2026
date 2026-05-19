@@ -109,3 +109,10 @@ npm i react-router-dom
 <BrowserRouter> : --> to enable routing in react application --> main.jsx
 <Routes> : --> to hold all route: app.jsx
 <Route> :- to create url for component will use Route element: app.jsx
+
+create 1 component in components folder Named 
+Navbar.jsx
+
+Go to bootstrap navbar: copy navbar code:
+
+cpoy css cdn in index.html -->pls check zoom chat
