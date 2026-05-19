@@ -99,3 +99,13 @@ header component
 product componne
 product detail
 cart compoentn
+
+components: -> url--> <a href ="url">
+React Routing
+package:
+react-router-dom ==> 3rd party
+
+npm i react-router-dom 
+<BrowserRouter> : --> to enable routing in react application --> main.jsx
+<Routes> : --> to hold all route: app.jsx
+<Route> :- to create url for component will use Route element: app.jsx
