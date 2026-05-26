@@ -19,6 +19,7 @@ import { HomePage } from './components/hotstar/HomePage'
 import { Watch } from './components/hotstar/Watch'
 import { Teams } from './components/Teams'
 import { TeamDetail } from './components/TeamDetail'
+import { FunCallDemo1 } from './components/FunCallDemo1'
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
             <Route path='/watch/:name' element = {<Watch/>}></Route>
             <Route path='/teams' element = {<Teams/>}></Route>
             <Route path='/teamdetail/:id' element = {<TeamDetail/>}></Route>
+            <Route path='/funcall' element = {<FunCallDemo1/>}></Route>
             <Route path='/*' element = {<Error404/>}></Route>
           </Routes> 
     </div>

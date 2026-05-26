@@ -1,8 +1,9 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 
 export const TeamDetail = () => {
     const id = useParams().id; //clicked.. --1
+    const navigate = useNavigate()
 
     const iplTeams2026 = [
   {
@@ -128,6 +129,9 @@ console.log("foundTeam",foundTeam)
         <h2>Short Name = {foundTeam.shortName}</h2>
         <h2>Captain = {foundTeam.captain}</h2>
         <h3>trophyWins ={foundTeam.trophyWins}</h3>
+        {/* <button className='btn btn-primary'>Back</button> */}
+        {/* <Link className='btn btn-primary' to="/teams">Back</Link> */}
+        <button onClick={()=>{navigate("/teams")}}>Back</button>
     </div>
   )
 }

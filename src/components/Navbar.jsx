@@ -43,6 +43,12 @@ export const Navbar = () => {
                 Teams
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/funcall">
+                funcall
+              </Link>
+            </li>
+            
           </ul>
         </div>
       </nav>
