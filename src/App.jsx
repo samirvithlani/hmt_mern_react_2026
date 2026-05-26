@@ -17,6 +17,8 @@ import { Navbar } from './components/Navbar'
 import { Error404 } from './components/Error404'
 import { HomePage } from './components/hotstar/HomePage'
 import { Watch } from './components/hotstar/Watch'
+import { Teams } from './components/Teams'
+import { TeamDetail } from './components/TeamDetail'
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
             <Route path='/shows' element ={<Shows/>}></Route>
             <Route path='/sports' element = {<Sports/>}></Route>
             <Route path='/watch/:name' element = {<Watch/>}></Route>
+            <Route path='/teams' element = {<Teams/>}></Route>
+            <Route path='/teamdetail/:id' element = {<TeamDetail/>}></Route>
             <Route path='/*' element = {<Error404/>}></Route>
           </Routes> 
     </div>
