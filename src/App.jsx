@@ -22,6 +22,8 @@ import { TeamDetail } from './components/TeamDetail'
 import { FunCallDemo1 } from './components/FunCallDemo1'
 import { NetflixMovies } from './components/netflix/NetflixMovies'
 import { NetflixShows } from './components/netflix/NetflixShows'
+import { Students } from './components/Students'
+import { StudentDetail } from './components/StudentDetail'
 
 
 function App() {
@@ -41,6 +43,8 @@ function App() {
             <Route path='/funcall' element = {<FunCallDemo1/>}></Route>
             <Route path='/netflixmovies' element ={<NetflixMovies/>}></Route>
             <Route path='/netflixshows' element = {<NetflixShows/>}></Route>
+            <Route path='/students' element = {<Students/>}></Route>
+            <Route path='/studentdetail/:id' element ={<StudentDetail/>}></Route>
             <Route path='/*' element = {<Error404/>}></Route>
           </Routes> 
     </div>
