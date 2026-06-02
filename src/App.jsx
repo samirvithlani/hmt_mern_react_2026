@@ -25,6 +25,8 @@ import { NetflixShows } from './components/netflix/NetflixShows'
 import { Students } from './components/Students'
 import { StudentDetail } from './components/StudentDetail'
 import { StudentResult } from './components/StudentResult'
+import { Books } from './components/Books'
+import { BookFilter } from './components/BookFilter'
 
 
 function App() {
@@ -47,6 +49,8 @@ function App() {
             <Route path='/students' element = {<Students/>}></Route>
             <Route path='/studentdetail/:id' element ={<StudentDetail/>}></Route>
             <Route path='/studentresult/:id' element ={<StudentResult/>}></Route>
+            <Route path='/books' element  ={<Books/>}></Route>
+            <Route path='/bookfilter/:price' element = {<BookFilter/>}></Route>
             <Route path='/*' element = {<Error404/>}></Route>
           </Routes> 
     </div>
