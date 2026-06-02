@@ -20,6 +20,8 @@ import { Watch } from './components/hotstar/Watch'
 import { Teams } from './components/Teams'
 import { TeamDetail } from './components/TeamDetail'
 import { FunCallDemo1 } from './components/FunCallDemo1'
+import { NetflixMovies } from './components/netflix/NetflixMovies'
+import { NetflixShows } from './components/netflix/NetflixShows'
 
 
 function App() {
@@ -37,6 +39,8 @@ function App() {
             <Route path='/teams' element = {<Teams/>}></Route>
             <Route path='/teamdetail/:id' element = {<TeamDetail/>}></Route>
             <Route path='/funcall' element = {<FunCallDemo1/>}></Route>
+            <Route path='/netflixmovies' element ={<NetflixMovies/>}></Route>
+            <Route path='/netflixshows' element = {<NetflixShows/>}></Route>
             <Route path='/*' element = {<Error404/>}></Route>
           </Routes> 
     </div>

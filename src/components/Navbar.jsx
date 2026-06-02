@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 export const Navbar = () => {
   return (
     <div>
@@ -33,7 +32,7 @@ export const Navbar = () => {
                 Shows
               </Link>
             </li>
-              <li class="nav-item">
+            <li class="nav-item">
               <Link class="nav-link" to="/sports">
                 Sports
               </Link>
@@ -48,7 +47,16 @@ export const Navbar = () => {
                 funcall
               </Link>
             </li>
-            
+            <li class="nav-item">
+              <Link class="nav-link" to="/netflixmovies">
+                Netflix Movies
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/netflixshows">
+                Netflix Shows
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

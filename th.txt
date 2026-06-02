@@ -122,3 +122,12 @@ components:
        contact us
 app.js -->route -->url
 navbar --> li -->        
+
+
+
+react routing
+package
+npm i react-router-dom
+<BrowserRouter> : to enable routing in react application : main.jsx
+<Routes> : route : App.jsx
+<Route> :url for component
