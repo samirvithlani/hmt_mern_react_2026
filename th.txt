@@ -131,3 +131,9 @@ npm i react-router-dom
 <BrowserRouter> : to enable routing in react application : main.jsx
 <Routes> : route : App.jsx
 <Route> :url for component
+
+
+Employee.jsx : url -->app.js -->navbar -->regi:
+       -->detail -->Link to ="/employeedetail>
+EmployeeDetail : url -->
+       useLocation --> state -->print

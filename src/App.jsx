@@ -27,6 +27,8 @@ import { StudentDetail } from './components/StudentDetail'
 import { StudentResult } from './components/StudentResult'
 import { Books } from './components/Books'
 import { BookFilter } from './components/BookFilter'
+import { Employees } from './components/Employees'
+import { EmployeeDetail } from './components/EmployeeDetail'
 
 
 function App() {
@@ -51,6 +53,8 @@ function App() {
             <Route path='/studentresult/:id' element ={<StudentResult/>}></Route>
             <Route path='/books' element  ={<Books/>}></Route>
             <Route path='/bookfilter/:price' element = {<BookFilter/>}></Route>
+            <Route path='/employees' element ={<Employees/>}></Route>
+            <Route path='/employeedetail' element={<EmployeeDetail/>}></Route>
             <Route path='/*' element = {<Error404/>}></Route>
           </Routes> 
     </div>
