@@ -137,3 +137,19 @@ Employee.jsx : url -->app.js -->navbar -->regi:
        -->detail -->Link to ="/employeedetail>
 EmployeeDetail : url -->
        useLocation --> state -->print
+
+react hook:
+16 -->
+builtin or life cycle function
+
+useState :
+all hook name starts with use
+
+BOM : browser objecct model
+HTML : dom : document object model
+
+updated....
+react js : virtal dom: in memory objecct
+
+TASK:
+create in detail documnetaion on virtal dom

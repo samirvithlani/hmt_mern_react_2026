@@ -29,6 +29,7 @@ import { Books } from './components/Books'
 import { BookFilter } from './components/BookFilter'
 import { Employees } from './components/Employees'
 import { EmployeeDetail } from './components/EmployeeDetail'
+import { UseStateDemo1 } from './components/UseStateDemo1'
 
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
             <Route path='/bookfilter/:price' element = {<BookFilter/>}></Route>
             <Route path='/employees' element ={<Employees/>}></Route>
             <Route path='/employeedetail' element={<EmployeeDetail/>}></Route>
+            <Route path='/usestatedemo1' element = {<UseStateDemo1/>}></Route>
             <Route path='/*' element = {<Error404/>}></Route>
           </Routes> 
     </div>
