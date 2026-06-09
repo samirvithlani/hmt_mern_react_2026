@@ -1,0 +1,29 @@
+import React, { useState } from 'react'
+
+export const UseStateDemo2 = () => {
+
+    const [loading,setLoading] = useState(true)
+
+    const stopLoader = ()=>{
+
+        setLoading(false)
+    }
+
+    // const stopLoader = ()=>{
+
+    //     setTimeout(() => {
+    //         setLoading(false)    
+    //     }, 2000);
+        
+    // }
+
+  return (
+    <div style={{textAlign:"center"}}>
+        <h1>UseStateDemo2</h1>
+        {
+            loading == true ? <h1>Loading...</h1>:""
+        }
+        <button onClick={stopLoader}>stop</button>
+    </div>
+  )
+}
