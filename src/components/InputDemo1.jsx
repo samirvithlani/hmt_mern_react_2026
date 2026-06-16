@@ -35,7 +35,7 @@ export const InputDemo1 = () => {
             <button onClick={clickHandler}>display</button>
         </div>
         {
-            isCliked == true && <div>
+            isCliked == true && <div style={{color:"red"}}>
             <h1>OUTOUT</h1>
             <h1>Name  = {name}</h1>
             <h3>Age = {age}</h3>
