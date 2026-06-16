@@ -42,7 +42,7 @@ export const Navbar = () => {
                 Teams
               </Link>
             </li>
-            <li class="nav-item">
+            {/* <li class="nav-item">
               <Link class="nav-link" to="/funcall">
                 funcall
               </Link>
@@ -87,7 +87,7 @@ export const Navbar = () => {
               <Link class="nav-link" to="/usestatedemo3">
                 usestatedemo3
               </Link>
-            </li>
+            </li> */}
             <li class="nav-item">
               <Link class="nav-link" to="/inputdemo1">
                 inputdemo1
@@ -101,6 +101,11 @@ export const Navbar = () => {
             <li class="nav-item">
               <Link class="nav-link" to="/inputdemo3">
                 inputdemo3
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/inputdemo4">
+                inputdemo4
               </Link>
             </li>
             
