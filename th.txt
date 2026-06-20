@@ -162,3 +162,14 @@ var updatedNumbers = [...numbers,100,100]
 console.log(updatedNumbers)
 // numbers.push(40)
 // console.log(numbers)
+
+component:
+input name :
+
+array push: useState []
+
+
+print
+
+
+
