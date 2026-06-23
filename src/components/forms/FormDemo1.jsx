@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 
 export const FormDemo1 = () => {
     const {register,handleSubmit} = useForm()
+    const [user, setuser] = useState({})
     //register: input register..
     //handlsubmit : submit handler
 
     const submitHandler = (data)=>{
 
         console.log(data)
+        setuser(data)
     }
 
   return (
@@ -32,6 +34,12 @@ export const FormDemo1 = () => {
                 <input type='submit'></input>
             </div>
         </form>
+        <div>
+        <h1>Output = </h1>
+        <h1>Name = {user.name}</h1>
+        <h2>Age = {user.age}</h2>
+        <h3>Gender = {user.gender}</h3>
+        </div>
     </div>
   )
 }
