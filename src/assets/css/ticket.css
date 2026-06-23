@@ -1,0 +1,85 @@
+.ticket-card {
+  width: 700px;
+  min-height: 220px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-poster {
+  width: 140px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ticket-content {
+  flex: 1;
+}
+
+.ticket-content h2 {
+  margin: 0 0 15px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.2;
+}
+
+.ticket-content p {
+  margin: 8px 0;
+  color: #666;
+  font-size: 20px;
+}
+
+.ticket-label {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  writing-mode: vertical-rl;
+  color: #777;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* Ticket perforation line */
+.ticket-card::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 10px;
+  border-bottom: 3px dashed #ddd;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .ticket-card {
+    width: 100%;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .movie-poster {
+    width: 90px;
+    height: 120px;
+  }
+
+  .ticket-content h2 {
+    font-size: 20px;
+  }
+
+  .ticket-content p {
+    font-size: 14px;
+  }
+
+  .ticket-label {
+    font-size: 12px;
+  }
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import "../../assets/css/ticket.css"
 
 export const FormDemo1 = () => {
     const {register,handleSubmit} = useForm()
@@ -40,6 +41,26 @@ export const FormDemo1 = () => {
         <h2>Age = {user.age}</h2>
         <h3>Gender = {user.gender}</h3>
         </div>
+          <div className="ticket-card">
+      <img
+        src="https://via.placeholder.com/140x180"
+        alt="movie"
+        className="movie-poster"
+      />
+
+      <div className="ticket-content">
+        <h2>Dilwale Dulhania Le Jayenge (U)</h2>
+
+        <p>Hindi, 2D</p>
+        <p>Tue, 01 Nov | 11:30 AM</p>
+        <p>Maratha Mandir, Mumbai Central</p>
+      </div>
+
+      <div className="ticket-label">
+        M-Ticket
+      </div>
+    </div>
+
     </div>
   )
 }
