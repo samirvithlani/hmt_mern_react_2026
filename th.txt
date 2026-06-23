@@ -167,9 +167,9 @@ component:
 input name :
 
 array push: useState []
-
-
 print
+
+npm i react-hook-form
 
 
 
