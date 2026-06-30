@@ -40,6 +40,7 @@ import { InputDemo5 } from './components/InputDemo5'
 import { FormDemo1 } from './components/forms/FormDemo1'
 import { Ticket } from './components/forms/Ticket'
 import { FormDemo2 } from './components/forms/FormDemo2'
+import { FormDemo3 } from './components/forms/FormDemo3'
 
 
 function App() {
@@ -76,6 +77,7 @@ function App() {
             <Route path='/inputdemo5' element ={<InputDemo5/>}></Route>
             <Route path='/formdemo1' element ={<FormDemo1/>}></Route>
             <Route path='/formdemo2' element ={<FormDemo2/>}></Route>
+            <Route path='/formdemo3' element ={<FormDemo3/>}></Route>
             <Route path='/ticket' element = {<Ticket/>}></Route>
             
             <Route path='/*' element = {<Error404/>}></Route>
