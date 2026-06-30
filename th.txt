@@ -171,5 +171,11 @@ print
 
 npm i react-hook-form
 
+required:boolean
+min:number
+max
+minLength
+maxLength
 
-
+validate:func
+pattern:string
