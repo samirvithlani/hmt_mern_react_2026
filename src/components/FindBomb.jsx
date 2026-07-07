@@ -1,15 +1,29 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 
 export const FindBomb = () => {
     var gridsize = 5
     var totaltiles = gridsize * gridsize
     const [clickedTiles, setclickedTiles] = useState([])
-    console.log("clicked tiles",clickedTiles)
+    const [gameOver, setgameOver] = useState(false)
+    //console.log("clicked tiles",clickedTiles)
+    //const bombpos = Math.floor(Math.random()*totaltiles) //bomb pos change compoent rerender
+    
+
+    //()=>{} : call back fun
+    //[] -->array
+    const bombpos = useMemo(()=>{
+        return Math.floor(Math.random()*totaltiles)
+    },[])
+    console.log("bomb pos",bombpos)
 
     const clickHandler = (index)=>{
         //alert(index)
         //spread operators
-        setclickedTiles([...clickedTiles,index])
+        setclickedTiles([...clickedTiles,index]) //updating state
+        if(index == bombpos){
+            setgameOver(true)
+            //alert("booooom.....")
+        }
 
     }
     
@@ -42,7 +56,9 @@ export const FindBomb = () => {
                         borderRadius:"4px",
                     }}> 
                     {/* inline css over */}
-                        {index}
+                        {
+                            gameOver == true && bombpos == index ? "💣" :index
+                        }
                         </div>
                 })
             }
