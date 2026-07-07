@@ -62,6 +62,11 @@ export const FindBomb = () => {
                         </div>
                 })
             }
+            <h1>
+            {
+                gameOver && clickedTiles.length-1
+            }
+            </h1>
         </div>
     </div>
   )
