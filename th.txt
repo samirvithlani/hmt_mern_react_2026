@@ -181,3 +181,68 @@ validate:func
 pattern:string
 
 useMemo:
+
+API: application programing interface
+react fronten:
+
+API: 
+url:
+react/js --> java/spring boot / python
+
+common : java react android:
+URL: 
+data:
+
+data CRUD:
+fe: display  -<<< data fetch
+form ->>>>>> db --->post
+DELETE --->
+update --->
+
+as frontend dev : api consume:
+as backend dev : api produce
+
+DATA DATA TYPE:
+json
+
+xml : soap : --->
+rest api:we services -->json
+
+
+CRUD:
+\url --> 
+REQUEST METHOD:
+
+GET : to send data in frontend
+POST : fronted data -->
+PUT :update:
+DELETE:delete
+
+documnetaion:
+
+axios package:
+API -->
+line 1
+line 2 --->10 sec
+line 3
+
+Promise: handle 
+then catch 
+async await
+
+
+url:
+https://node5.onrender.com/user/user/
+{
+       message:"",
+       data:[{}]
+}
+{_id,name,email,password,age,isActive}
+
+
+
+
+
+
+
+

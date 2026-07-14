@@ -88,7 +88,7 @@ export const Navbar = () => {
                 usestatedemo3
               </Link>
             </li> */}
-            <li class="nav-item">
+            {/* <li class="nav-item">
               <Link class="nav-link" to="/inputdemo1">
                 inputdemo1
               </Link>
@@ -147,8 +147,12 @@ export const Navbar = () => {
               <Link class="nav-link" to="/findbomb">
                 findbomb
               </Link>
+            </li> */}
+            <li class="nav-item">
+              <Link class="nav-link" to="/apidemo1">
+                apidemo1
+              </Link>
             </li>
-            
             
             
             
