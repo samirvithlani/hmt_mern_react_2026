@@ -1,12 +1,23 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { Loader } from '../Loader'
 
 export const ApiDemo1 = () => {
     const[message,setMessage]=useState("")
     const [users, setusers] = useState([])
+    const [isLoading, setisLoading] = useState(false)
+
+    useEffect(()=>{
+        //console.log("use effect called..")
+        getUsers()
+    },[])
+
+    //()=>{} callback fun
+    //[] -->depd array
 
     const getUsers = async()=>{
 
+        setisLoading(true)
         const res = await axios.get("https://node5.onrender.com/user/user/")
         console.log("res",res) //axios object..
         console.log(res.data) //api response...
@@ -14,6 +25,7 @@ export const ApiDemo1 = () => {
         console.log(res.data.data) //[]
         setMessage(res.data.message)
         setusers(res.data.data)
+        setisLoading(false)
 
     }
 
@@ -21,7 +33,10 @@ export const ApiDemo1 = () => {
   return (
     <div style={{textAlign:"center"}}>
         <h1>API DEMO 1</h1>
-        <button onClick={getUsers}>GET</button>
+        {
+            isLoading == true && <Loader/>
+        }
+        {/* <button onClick={getUsers}>GET</button> */}
         {message}
         <table className='table table-dark'>
             <tr>

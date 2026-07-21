@@ -239,6 +239,9 @@ https://node5.onrender.com/user/user/
 }
 {_id,name,email,password,age,isActive}
 
+usEffect is hook in react
+to handle side effect in react it will use..
+
 
 
 
