@@ -29,6 +29,17 @@ export const ApiDemo1 = () => {
 
     }
 
+    const deletehandler = async(id)=>{
+
+        //alert(id)
+        const res = await axios.delete(`https://node5.onrender.com/user/user/${id}`)
+        console.log(res) //delete response...
+        if(res.status==204){
+            // alert("user has been deleted")
+            getUsers()
+        }
+    }
+
 
   return (
     <div style={{textAlign:"center"}}>
@@ -45,6 +56,7 @@ export const ApiDemo1 = () => {
                 <th>EMAIL</th>
                 <th>AGE</th>
                 <th>STATUS</th>
+                <th>Action</th>
             </tr>
             {
                 users.map((u)=>{
@@ -54,6 +66,9 @@ export const ApiDemo1 = () => {
                         <td>{u.email}</td>
                         <td>{u.age}</td>
                         <td>{u.isActive==true?"Active":"Not ACtive"}</td>
+                        <td>
+                            <button onClick={()=>{deletehandler(u._id)}} className='btn btn-danger'>DELETE</button>
+                        </td>
                     </tr>
                 })
             }

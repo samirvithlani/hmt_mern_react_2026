@@ -243,6 +243,10 @@ usEffect is hook in react
 to handle side effect in react it will use..
 
 
+DELETE:
+URL:https://node5.onrender.com/user/user/id
+
+
 
 
 
