@@ -45,6 +45,7 @@ import { FormDemo4 } from './components/forms/FormDemo4'
 import { FormDemo5 } from './components/forms/FormDemo5'
 import { FindBomb } from './components/FindBomb'
 import { ApiDemo1 } from './components/api/ApiDemo1'
+import { OmdbSearch } from './components/api/OmdbSearch'
 
 
 function App() {
@@ -87,6 +88,7 @@ function App() {
             <Route path='/ticket' element = {<Ticket/>}></Route>
             <Route path='/findbomb' element = {<FindBomb/>}></Route>
             <Route path='/apidemo1' element ={<ApiDemo1/>}></Route>
+            <Route path='/omdbapi' element ={<OmdbSearch/>}></Route>
 
             <Route path='/*' element = {<Error404/>}></Route>
           </Routes> 
