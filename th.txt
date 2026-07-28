@@ -259,8 +259,28 @@ D-
       "isActive": true,   //boolean  
 }
 
+GET:  https://node5.onrender.com/product/getall : browser call
 
+POST: https://node5.onrender.com/product/create
+      data
+      {
+      "colors": [], //array
+      "isAvailable": true, //boolean
+      "unit": 0, //number
+      "name": "ipad mini", //string
+      "price": 20000,//number
+      "description": "Na levai", //string
+    },
+ 
+ApiDemo6
 
+form
+name :text
+price:text
+isAvailable:radio
+description:text
+unit:text
+colors: checkbox
 
 
 

@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
@@ -7,6 +7,13 @@ import { toast } from 'react-toastify'
 export const APiDemo3 = () => {
     const {register,handleSubmit}=useForm()
     const navigate = useNavigate()
+
+   useEffect(() => {
+    window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: "smooth"
+    })
+}, [])
 
     const submitHandler = async(data)=>{
         data.age = parseInt(data.age)

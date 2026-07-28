@@ -11,8 +11,20 @@ export const ApiDemo1 = () => {
     useEffect(()=>{
         //console.log("use effect called..")
         getUsers()
+         
+        
     },[])
 
+    useEffect(()=>{
+        if(users.length>0){
+        window.scrollTo({
+            top:document.documentElement.scrollHeight,
+            behavior:"smooth"
+        })
+    }
+    },[users])
+
+   
     //()=>{} callback fun
     //[] -->depd array
 
