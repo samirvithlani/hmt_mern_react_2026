@@ -48,6 +48,7 @@ import { ApiDemo1 } from './components/api/ApiDemo1'
 import { OmdbSearch } from './components/api/OmdbSearch'
 import { Bounce, ToastContainer } from 'react-toastify'
 import { ApiDemo2 } from './components/api/ApiDemo2'
+import { APiDemo3 } from './components/api/APiDemo3'
 
 
 function App() {
@@ -104,6 +105,7 @@ transition={Bounce}
             <Route path='/findbomb' element = {<FindBomb/>}></Route>
             <Route path='/apidemo1' element ={<ApiDemo1/>}></Route>
             <Route path='/apidemo2' element ={<ApiDemo2/>}></Route>
+            <Route path='/apidemo3' element ={<APiDemo3/>}></Route>
             <Route path='/omdbapi' element ={<OmdbSearch/>}></Route>
 
             <Route path='/*' element = {<Error404/>}></Route>
