@@ -246,7 +246,18 @@ to handle side effect in react it will use..
 DELETE:
 URL:https://node5.onrender.com/user/user/id
 
+npm i react-toastify
 
+URL:
+POST: https://node5.onrender.com/user/user/
+D-
+ {
+      "name": "tanisha", //string
+      "email": "tanisha@gmail.com", //string
+      "password": "$2b$10$4W3Tkqt3NOgz7hyWDKHyeedD/seKclKWiu5SvGu0cZToz8.qjvGh6", //string
+      "age": 22, //number
+      "isActive": true,   //boolean  
+}
 
 
 

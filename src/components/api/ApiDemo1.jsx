@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Loader } from '../Loader'
+import { toast } from 'react-toastify'
 
 export const ApiDemo1 = () => {
     const[message,setMessage]=useState("")
@@ -35,7 +36,8 @@ export const ApiDemo1 = () => {
         const res = await axios.delete(`https://node5.onrender.com/user/user/${id}`)
         console.log(res) //delete response...
         if(res.status==204){
-            // alert("user has been deleted")
+            //alert("user has been deleted")
+            toast.success("user has been deleted")
             getUsers()
         }
     }

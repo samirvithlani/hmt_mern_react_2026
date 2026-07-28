@@ -46,6 +46,8 @@ import { FormDemo5 } from './components/forms/FormDemo5'
 import { FindBomb } from './components/FindBomb'
 import { ApiDemo1 } from './components/api/ApiDemo1'
 import { OmdbSearch } from './components/api/OmdbSearch'
+import { Bounce, ToastContainer } from 'react-toastify'
+import { ApiDemo2 } from './components/api/ApiDemo2'
 
 
 function App() {
@@ -53,6 +55,19 @@ function App() {
 
   return (
     <div>
+      <ToastContainer
+position="top-center"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick={false}
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="dark"
+transition={Bounce}
+/>
       <Navbar></Navbar>
           <Routes>
             <Route path='' element = {<HomePage/>}></Route>
@@ -88,6 +103,7 @@ function App() {
             <Route path='/ticket' element = {<Ticket/>}></Route>
             <Route path='/findbomb' element = {<FindBomb/>}></Route>
             <Route path='/apidemo1' element ={<ApiDemo1/>}></Route>
+            <Route path='/apidemo2' element ={<ApiDemo2/>}></Route>
             <Route path='/omdbapi' element ={<OmdbSearch/>}></Route>
 
             <Route path='/*' element = {<Error404/>}></Route>
