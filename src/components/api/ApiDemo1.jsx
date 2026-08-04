@@ -2,27 +2,27 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Loader } from '../Loader'
 import { toast } from 'react-toastify'
+import { Link } from 'react-router-dom'
 
 export const ApiDemo1 = () => {
     const[message,setMessage]=useState("")
     const [users, setusers] = useState([])
     const [isLoading, setisLoading] = useState(false)
 
-    useEffect(()=>{
-        //console.log("use effect called..")
-        getUsers()
-         
-        
-    },[])
+        useEffect(()=>{
+            //console.log("use effect called..")
+            getUsers()    
+            
+        },[])
 
-    useEffect(()=>{
-        if(users.length>0){
-        window.scrollTo({
-            top:document.documentElement.scrollHeight,
-            behavior:"smooth"
-        })
-    }
-    },[users])
+    // useEffect(()=>{
+    //     if(users.length>0){
+    //     window.scrollTo({
+    //         top:document.documentElement.scrollHeight,
+    //         behavior:"smooth"
+    //     })
+    // }
+    // },[users])
 
    
     //()=>{} callback fun
@@ -82,6 +82,7 @@ export const ApiDemo1 = () => {
                         <td>{u.isActive==true?"Active":"Not ACtive"}</td>
                         <td>
                             <button onClick={()=>{deletehandler(u._id)}} className='btn btn-danger'>DELETE</button>
+                            <Link to={`/updateuser/${u._id}`} state={u} className='btn btn-warning'>UPDATE</Link>
                         </td>
                     </tr>
                 })
