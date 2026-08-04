@@ -30,24 +30,24 @@ export const UpdateUser = () => {
   return (
     <div style={{textAlign:"center"}}>
         <h1>UPDATE USER - {id}</h1>
-        <form onSubmit={handleSubmit(submitHandler)}>
-            
-            <div>
-                <label>NAME</label>
-                <input type='text' {...register("name")}></input>
-            </div>
-            <div>
-                <label>AGE</label>
-                <input type='text' {...register("age")}></input>
-            </div>
-            <div>
-                <label>EMAIL</label>
-                <input type='text' {...register("email")}></input>
-            </div>
-            <div>
-                <input type='submit' value="update"></input>
-            </div>
-        </form>
+    <form onSubmit={handleSubmit(submitHandler)}>
+        
+        <div>
+            <label>NAME</label>
+            <input type='text' {...register("name")}></input>
+        </div>
+        <div>
+            <label>AGE</label>
+            <input type='text' {...register("age")}></input>
+        </div>
+        <div>
+            <label>EMAIL</label>
+            <input type='text' {...register("email")}></input>
+        </div>
+        <div>
+            <input type='submit' value="update"></input>
+        </div>
+    </form>
     </div>
   )
 }

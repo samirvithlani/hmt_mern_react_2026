@@ -50,6 +50,7 @@ import { Bounce, ToastContainer } from 'react-toastify'
 import { ApiDemo2 } from './components/api/ApiDemo2'
 import { APiDemo3 } from './components/api/APiDemo3'
 import { UpdateUser } from './components/api/UpdateUser'
+import { UpdateUser2 } from './components/api/UpdateUser2'
 
 
 function App() {
@@ -109,6 +110,7 @@ transition={Bounce}
             <Route path='/apidemo3' element ={<APiDemo3/>}></Route>
             <Route path='/omdbapi' element ={<OmdbSearch/>}></Route>
             <Route path='/updateuser/:id' element ={<UpdateUser/>}></Route>
+            <Route path='/updateuser2/:id' element ={<UpdateUser2/>}></Route>
 
 
             <Route path='/*' element = {<Error404/>}></Route>

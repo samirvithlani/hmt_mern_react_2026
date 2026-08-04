@@ -82,7 +82,7 @@ export const ApiDemo1 = () => {
                         <td>{u.isActive==true?"Active":"Not ACtive"}</td>
                         <td>
                             <button onClick={()=>{deletehandler(u._id)}} className='btn btn-danger'>DELETE</button>
-                            <Link to={`/updateuser/${u._id}`} state={u} className='btn btn-warning'>UPDATE</Link>
+                            <Link to={`/updateuser2/${u._id}`} state={u} className='btn btn-warning'>UPDATE</Link>
                         </td>
                     </tr>
                 })
