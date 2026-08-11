@@ -51,6 +51,7 @@ import { ApiDemo2 } from './components/api/ApiDemo2'
 import { APiDemo3 } from './components/api/APiDemo3'
 import { UpdateUser } from './components/api/UpdateUser'
 import { UpdateUser2 } from './components/api/UpdateUser2'
+import { Course } from './components/Course'
 
 
 function App() {
@@ -111,6 +112,7 @@ transition={Bounce}
             <Route path='/omdbapi' element ={<OmdbSearch/>}></Route>
             <Route path='/updateuser/:id' element ={<UpdateUser/>}></Route>
             <Route path='/updateuser2/:id' element ={<UpdateUser2/>}></Route>
+            <Route path='/course' element ={<Course/>}></Route>
 
 
             <Route path='/*' element = {<Error404/>}></Route>

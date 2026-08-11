@@ -168,6 +168,12 @@ export const Navbar = () => {
                 omdbapi
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/course">
+                course
+              </Link>
+            </li>
+            
             
             
             
