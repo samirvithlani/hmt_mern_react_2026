@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { CardComponent } from "./CardComponent";
 
 export const Teams = () => {
   const iplTeams = [
@@ -24,6 +25,9 @@ export const Teams = () => {
             </li>
         })
       }
+
+      <CardComponent title={"Teams"} subtitle={"Team List"} color={"white"} bgcolor ={"blue"}></CardComponent>
     </div>
+
   );
 };

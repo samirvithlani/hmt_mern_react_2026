@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { CardComponent } from '../CardComponent'
 
 export const Shows = () => {
 
@@ -22,6 +23,7 @@ export const Shows = () => {
             </li>
           })
         }
+        <CardComponent title={"SHOWS"}></CardComponent>
     </div>
   )
 }

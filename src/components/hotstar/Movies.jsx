@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { CardComponent } from '../CardComponent'
 
 export const Movies = () => {
   return (
@@ -16,6 +17,8 @@ export const Movies = () => {
             <Link to="/watch/12thfail">12th Fail</Link>
           </li>
         </ol>
+
+        <CardComponent subtitle ={"my movies"}></CardComponent>
     </div>
   )
 }
