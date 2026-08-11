@@ -1,8 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { CardComponent } from '../CardComponent'
+import { MyButton } from '../MyButton'
 
 export const Shows = () => {
+
+  const showTest =()=>{
+    alert("show test called..")
+  }
 
   const showList = [
     {id:1,name:"Money Heist"},
@@ -24,6 +29,7 @@ export const Shows = () => {
           })
         }
         <CardComponent title={"SHOWS"}></CardComponent>
+        <MyButton funName = {showTest} title="list"></MyButton>
     </div>
   )
 }

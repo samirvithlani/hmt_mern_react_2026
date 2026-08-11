@@ -1,8 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { CardComponent } from '../CardComponent'
+import { MyButton } from '../MyButton'
 
 export const Movies = () => {
+
+  const movieTest = ()=>{
+    alert("movie test called..")
+  }
+
   return (
     <div style={{textAlign:"center"}}>
         <h1>Movies</h1>
@@ -19,6 +25,7 @@ export const Movies = () => {
         </ol>
 
         <CardComponent subtitle ={"my movies"}></CardComponent>
+        <MyButton funName ={movieTest}></MyButton>
     </div>
   )
 }
