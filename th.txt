@@ -285,3 +285,11 @@ colors: checkbox
 update button -->click --->component-->old ->form --->edit --->submit[update]
 
 Coursr
+
+
+
+<Buttton>
+
+MyButton
+
+ return <button sty>name</button>
