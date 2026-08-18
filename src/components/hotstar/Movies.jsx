@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { CardComponent } from '../CardComponent'
 import { MyButton } from '../MyButton'
+import { Box } from '../Box'
 
 export const Movies = () => {
 
@@ -26,6 +27,11 @@ export const Movies = () => {
 
         <CardComponent subtitle ={"my movies"}></CardComponent>
         <MyButton funName ={movieTest}></MyButton>
+        <Box>
+          <h1>Hello</h1>
+          <h2>Hi</h2>
+          <p>ok</p>
+        </Box>
     </div>
   )
 }
