@@ -32,6 +32,9 @@ export const Movies = () => {
           <h2>Hi</h2>
           <p>ok</p>
         </Box>
+        <Box>
+          <h1>this is second box</h1>
+        </Box>
     </div>
   )
 }

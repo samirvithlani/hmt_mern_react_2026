@@ -293,3 +293,31 @@ Coursr
 MyButton
 
  return <button sty>name</button>
+
+ api --> GetApiTable.jsx
+
+    const[message,setMessage]=useState("")
+    const [users, setusers] = useState([])
+    const [isLoading, setisLoading] = useState(false)
+
+
+ function -->
+ const getUsers = async()=>{
+
+        setisLoading(true)
+        const res = await axios.get("https://node5.onrender.com/user/user/")
+        console.log("res",res) //axios object..
+        console.log(res.data) //api response...
+        console.log(res.data.message)
+        console.log(res.data.data) //[]
+        setMessage(res.data.message)
+        setusers(res.data.data)
+        setisLoading(false)
+
+    }
+useEffecct(()=>{
+       getUsers()
+},[])    
+
+headers = Object.keys(user[0])
+<MyTable headers ={headers} data = {users}></MyTable>
