@@ -5,7 +5,15 @@ import { MyTable } from "./MyTable";
 
 export const Teams = () => {
 
-  var headers = ["id","name","email","age"]
+  //var headers = ["id","name","email","age"]
+  var data = [
+    {id:1,name:"amit",age:23,email:"amit@gmail.com"},
+    {id:2,name:"raj",age:24,email:"amit@gmail.com"},
+    {id:3,name:"parth",age:22,email:"amit@gmail.com"},
+    {id:4,name:"neha",age:26,email:"amit@gmail.com"},
+  ]
+
+  var headers = Object.keys(data[0])
 
 
 

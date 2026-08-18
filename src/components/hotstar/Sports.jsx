@@ -3,7 +3,14 @@ import { CardComponent } from '../CardComponent'
 import { MyTable } from '../MyTable'
 
 export const Sports = () => {
-  var headers = ["ID","sport name","year"]
+  //var headers = ["ID","sport name","year"]
+  var sports =[
+    {id:101,sportName:"cricket",year:1850},
+    {id:102,sportName:"football",year:1950},
+    {id:103,sportName:"chess",year:1920},
+  ]
+
+  var headers = Object.keys(sports[0])
   return (
     <div>
         <h1>SPORTS</h1>
