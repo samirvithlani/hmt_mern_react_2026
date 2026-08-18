@@ -1,8 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { CardComponent } from "./CardComponent";
+import { MyTable } from "./MyTable";
 
 export const Teams = () => {
+
+  var headers = ["id","name","email","age"]
+
+
+
   const iplTeams = [
     { id: 1, name: "CSK" },
     { id: 2, name: "MI" },
@@ -26,7 +32,19 @@ export const Teams = () => {
         })
       }
 
-      <CardComponent title={"Teams"} subtitle={"Team List"} color={"white"} bgcolor ={"blue"}></CardComponent>
+      {/* <CardComponent title={"Teams"} subtitle={"Team List"} color={"white"} bgcolor ={"blue"}></CardComponent> */}
+      {/* <table className="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>NAME</th>
+              <th>EMAIL</th>
+              <th>AGE</th>
+            </tr>
+          </thead>
+      </table> */}
+
+        <MyTable headers ={headers}></MyTable>
     </div>
 
   );
