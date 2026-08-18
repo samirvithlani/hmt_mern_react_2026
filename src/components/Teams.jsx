@@ -52,7 +52,7 @@ export const Teams = () => {
           </thead>
       </table> */}
 
-        <MyTable headers ={headers}></MyTable>
+        <MyTable headers ={headers} data = {data}></MyTable>
     </div>
 
   );

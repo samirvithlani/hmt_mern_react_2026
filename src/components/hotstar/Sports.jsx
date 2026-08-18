@@ -24,7 +24,7 @@ export const Sports = () => {
             </tr>
           </thead>
         </table> */}
-        <MyTable headers = {headers}></MyTable>
+        <MyTable headers = {headers} data ={sports}></MyTable>
     </div>
   )
 }
